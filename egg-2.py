@@ -73,12 +73,26 @@ triangle(100,90) """
         t.left(y)
 
 def squares(iRange):
-    length = 5
+    x = 5
     for i in range(iRange):
-        square(length, 90)
-        length += 5
-squares(5,90)
- """
+        square(x, 90)
+        x += 5
+        t.right(5)
+squares(60) """
+
+def star(x,y):
+    for i in range (5):
+        t.forward(x)
+        t.left(y)
+
+def stars (iRange):
+    x = 10
+    for i in range(iRange):
+        star (x, 144)
+        x += 5
+        t.right(5)
+stars(60)
+
 
 
 turtle.done()
