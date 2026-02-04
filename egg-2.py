@@ -13,6 +13,7 @@ def square(x,y):
         t.forward(x)
         t.left(y)
 square(100,90) """
+# above does not work
 
 """ for i in range(60):
     side = 100
@@ -23,6 +24,7 @@ square(100,90) """
             t.left(y)
     square(100,90)
     t.right(5) """
+# above does not work
 
 """ for i in range (4):
     t.forward(100)
@@ -35,7 +37,20 @@ square(100,90) """
         for i in range(4):
             t.forward(x)
             t.left(y)
-    triangle(100,90) """
+    square(100,90) """
+# above does not work
+
+""" def square(x,y):
+    for i in range(4):
+        t.forward(x)
+        t.left(y)
+
+def squares(iRange):
+    x = 25
+    for i in range(iRange):
+        square(x, 90)
+        x = x * 2
+squares(5) """
 
 """ def square(x,y):
     for i in range(4):
@@ -56,6 +71,7 @@ def triangle (x,y):
         t.forward(x)
         t.left(y)
 triangle(100,90) """
+#above code does not work
 
 """ for i in range(60):
     side = 50
@@ -66,6 +82,20 @@ triangle(100,90) """
             t.forward(x) 
             t.left(y)
     square(50,90) """
+#above code does not work
+
+""" def square(x,y):
+    for i in range(4):
+        t.forward(x)
+        t.left(y)
+
+def squares(iRange):
+    length = 5
+    for i in range(iRange):
+        square(length, 90)
+        length += 5
+squares(5,90) """
+#above code does not work
 
 """ def square(x,y):
     for i in range(4):
@@ -80,19 +110,19 @@ def squares(iRange):
         t.right(5)
 squares(60) """
 
+""" t.speed('fastest')
+
 def star(x,y):
-    for i in range (5):
+    for i in range(5):
         t.forward(x)
         t.left(y)
 
-def stars (iRange):
-    x = 10
+def stars(iRange):
+    x = 5
     for i in range(iRange):
-        star (x, 144)
+        star(x, 144)
         x += 5
         t.right(5)
-stars(60)
-
-
+stars(60) """
 
 turtle.done()
